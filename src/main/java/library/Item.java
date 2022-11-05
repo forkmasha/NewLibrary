@@ -8,10 +8,10 @@ public abstract class Item {
     int qtyCopy;
 
     public Item() {
-        this.id=id;
+        this.id = id;
         this.name = name;
         this.authorName = authorName;
         this.qty = qty;
-        this.qtyCopy=qtyCopy;
+        this.qtyCopy = qtyCopy;
     }
 }

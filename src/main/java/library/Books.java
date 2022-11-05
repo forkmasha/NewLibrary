@@ -2,7 +2,7 @@ package library;
 
 import java.util.Scanner;
 
-public class Books implements Serchable,Showable,Upgradebly{
+public class Books implements Serchable, Showable, Upgradebly {
     Book allBooks[] = new Book[200];
     public static int count;
     Scanner input = new Scanner(System.in);
@@ -33,7 +33,8 @@ public class Books implements Serchable,Showable,Upgradebly{
                     "No Space to Add More Books.");
         }
     }
-@Override
+
+    @Override
     public void searchById() {
         System.out.println(
                 "\t\t\t\tSEARCH BY ID\n");
@@ -60,6 +61,7 @@ public class Books implements Serchable,Showable,Upgradebly{
         if (flag == 0)
             System.out.println("No Book for id " + id + " Found.");
     }
+
     @Override
     public void searchByAuthorName() {
         System.out.println(
@@ -85,6 +87,7 @@ public class Books implements Serchable,Showable,Upgradebly{
         if (flag == 0)
             System.out.println("No Books of " + authorName + " Found.");
     }
+
     @Override
     public void showAll() {
         System.out.println("\t\t\t\tSHOWING ALL BOOKS\n");
@@ -99,6 +102,7 @@ public class Books implements Serchable,Showable,Upgradebly{
                             + allBooks[i].qty);
         }
     }
+
     @Override
     public void upgradeQty() {
         System.out.println(
