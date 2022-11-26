@@ -8,17 +8,17 @@ public class Magazine extends Item{
     public Magazine() {
         super();
         System.out.println("Enter id of Magazine:");
-        this.id = input.nextInt();
+        this.setId(input.nextInt());
         input.nextLine();
 
         System.out.println("Enter Magazine Name:");
-        this.name = input.nextLine();
+        this.setName(input.nextLine());
 
         System.out.println("Enter Author Name:");
-        this.authorName = input.nextLine();
+        this.setAuthorName(input.nextLine());
 
         System.out.println("Enter Quantity of Magazine:");
-        this.qty = input.nextInt();
-        qtyCopy = this.qty;
+        this.setQty(input.nextInt());
+        setQtyCopy(this.getQty());
     }
 }

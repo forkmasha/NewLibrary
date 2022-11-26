@@ -1,5 +1,5 @@
 package library;
 
 public interface Upgradebly {
-    public void upgradeQty();
+    void upgradeQty();
 }

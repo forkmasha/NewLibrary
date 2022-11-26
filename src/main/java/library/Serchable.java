@@ -1,7 +1,7 @@
 package library;
 
 public interface Serchable {
-    public void searchById();
+    void searchById();
 
-    public void searchByAuthorName();
+     void searchByAuthorName();
 }
