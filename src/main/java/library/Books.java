@@ -110,6 +110,10 @@ public class Books implements Serchable, Showable, Upgradebly {
             if (id == allBooks[i].getId()) {
                 System.out.println("Enter id of Books to be Added:");
 
+                int addingQty = input.nextInt();
+                //allBooks[i].qty += addingQty;
+               // allBooks[i].qtyCopy += addingQty;
+                return;
             }
         }
     }
