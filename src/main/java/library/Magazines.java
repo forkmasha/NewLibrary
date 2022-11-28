@@ -118,8 +118,9 @@ public class Magazines implements Serchable, Showable, Upgradebly {
                         "Enter No of Books to be Added:");
 
                 int addingQty = input.nextInt();
-                //allMagazines[i].qty += addingQty;
-                //allMagazines[i].qtyCopy += addingQty;
+                Magazine magazine = allMagazines[i];
+                magazine.setQty(magazine.getQty() + addingQty);
+                magazine.setQtyCopy(magazine.getQtyCopy() + addingQty);
 
                 return;
             }
